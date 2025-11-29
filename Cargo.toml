@@ -1,0 +1,16 @@
+[package]
+name = "rainmeter-remote-simple-metric-server"
+version = "0.1.0"
+edition = "2024"
+description = "A HTTP server exposes CPU, RAM, disk IO, and network IO metrics as Rainmeter remote data"
+license = "MIT"
+repository = "https://github.com/slow-groovin/rainmeter-remote-simple-metric-server"   # 可选，但推荐
+readme = "README.md"
+keywords = ["rainmeter"]
+categories = ["web-programming::http-server"]
+
+
+[dependencies]
+sysinfo = "0.37.2"
+tiny_http = "0.12"
+
