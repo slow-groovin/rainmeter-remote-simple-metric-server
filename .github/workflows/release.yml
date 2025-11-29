@@ -56,7 +56,7 @@ jobs:
 
       - name: Package (Linux/macOS)
         if: runner.os != 'Windows'
-        id: package
+        id: package-non-windows
         run: |
           BIN=${{ env.BINARY_NAME }}
           TAG=${{ env.TAG }}
@@ -72,7 +72,7 @@ jobs:
 
       - name: Package (Windows)
         if: runner.os == 'Windows'
-        id: package
+        id: package-windows
         run: |
           $Bin='${{ env.BINARY_NAME }}'
           $Tag='${{ env.TAG }}'
